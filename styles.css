@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.student-dashboard {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-name, .student-age, .registered {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 5px;
+}
+
+.registered {
+    font-weight: bold;
+    color: green;
+}
+
+.not-registered {
+    font-weight: bold;
+    color: red;
+}
+
+.courses {
+    list-style-type: none;
+    padding: 0;
+}
+
+.courses li {
+    background: #e9ecef;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.courses li:hover {
+    background: #f8f9fa;
+    cursor: pointer;
+}
+
+
