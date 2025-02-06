@@ -77,7 +77,23 @@ const students = [
  * If the student is not registered, display a message that the student is not registered
  * Only display courses if the student is registered else display a message that the student is not registered
  * Display the student's courses in a list
- */
+ */ 
 
+students.forEach(student => {
+    if(student.isRegistered){
+        console.log(`${student.name} is registered and is ${student.age} years old`);
+    }else{
+        console.log(`${student.name} is not registered`);
+    }
 
+    if(student.isRegistered){
+        console.log(`Courses: ${student.courses}`);
+    }else{
+        console.log("Student is not registered");
+    }
+})
 
+students.forEach(student => {
+    student.isRegistered ? console.log(`${student.name} is registered and is ${student.age} years old`) : console.log(`${student.name} is not registered`);
+    student.isRegistered ? console.log(`Courses: ${student.courses}`) : console.log("Student is not registered");
+})
