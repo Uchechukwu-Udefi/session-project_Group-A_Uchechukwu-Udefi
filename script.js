@@ -87,13 +87,18 @@ students.forEach(student => {
     }
 
     if(student.isRegistered){
-        console.log(`Courses: ${student.courses}`);
+        student.courses.length > 0;
+        student.courses.forEach(course => {
+            console.log(course);
+        })
     }else{
         console.log("Student is not registered");
     }
 })
 
+/*
 students.forEach(student => {
     student.isRegistered ? console.log(`${student.name} is registered and is ${student.age} years old`) : console.log(`${student.name} is not registered`);
     student.isRegistered ? console.log(`Courses: ${student.courses}`) : console.log("Student is not registered");
 })
+    */
